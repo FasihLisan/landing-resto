@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <title>Fasih Resto</title>
+</head>
+
+<body>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#menumakanan">Fasih Resto</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="#beranda">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#asalusul">AsalUsul</a>
+                    <a class="nav-item nav-link" href="#menumakanan">Menu Makanan</a>
+
+
+
+
+                    <!-- form login -->
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+                        class="btn btn-primary">Login</button>
+
+                    <div id="id01" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">&times;</span>
+                                <img src="image/img1.jpg" alt="Avatar" class="avatar">
+                            </div>
+
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button type="submit" class="btn btn-success">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class=" mt-3 mb-5 btn  btn-danger">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById('id01');
+
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function (event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+
+                    <!-- form login -->
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container jtex">
+            <h1 class="display-4"><b>Fasih Resto</b></h1>
+            <p class="lead">Restoran <span>Terpopuler</span> seindonesia <br> dengan menu terlengkap dan
+                <span>terenak</span></p>
+            <a href="#menumakanan" class="btn btn-primary">Food</a>
+        </div>
+    </div>
+
+
+
+    <div class="container pb-5" id="asalusul">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Asal Usul</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <p> Restoran fasih ialah restoran yang di bangun pada awal tahun 2020, dengan menu terlenkap di dunia
+                    yang di buat oleh ach. fasihul lisan dengan botstrap dan hanya html css di buat di bangkalan pada
+                    sore hari hampir malam ketia ia koding banyak kendala eror dan itu tidak memutuskan semangatnya
+                    malah ia semakin ingin tahu dan sehingga eroronya terselesaikan , trimakasih</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="menumakanan">
+        <div class="row">
+            <div class="col text-center pb-2">
+                <h1>Menu Makanan</h1>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="image/jbuntron.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a class="mr-2 text-danger">Rp. 25K</a><a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="image/jbuntron.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a class="mr-2 text-danger">Rp. 25K</a><a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="image/jbuntron.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a class="mr-2 text-danger">Rp. 25K</a><a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="image/jbuntron.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a class="mr-2 text-danger">Rp. 25K</a><a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="image/jbuntron.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a class="mr-2 text-danger">Rp. 25K</a><a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <img class="card-img-top" src="image/jbuntron.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a class="mr-2 text-danger">Rp. 25K</a><a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-light bg-dark p-2 text-center mt-5">
+        <p>&copy;Copy right FasihArt 2020</p>
+    </footer>
+
+
+    <script src="js/jquery-3.4.1.slim.min.js">
+    </script>
+    <script src="js/popper.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+
+
+
+
+
+</body>
+
+
+
+</html>
